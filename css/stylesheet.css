@@ -45,6 +45,7 @@ body {
     scroll-behavior: smooth;
     text-rendering: optimizespeed;
     font-family: "Open Sans", sans-serif;
+    background: linear-gradient(106deg, rgba(184,8,224,1) 0%, rgba(77,11,167,1) 100%, rgba(76,80,223,1) 100%);
 }
 
 ul[class],
@@ -85,7 +86,7 @@ select {
 /* ==== General styles ==== */
 
 .container {
-    width: 60%;
+    width: 80%;
     margin: 200px auto;
     padding: 30px 30px 0;
 }
@@ -93,9 +94,10 @@ select {
     background: aliceblue;
     border-radius: 30px;
     box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+    padding-bottom: 30px;
 }
 
-h1,h2 {
+h1,h2,h3 {
     text-align: center;
 }
 
@@ -107,6 +109,7 @@ h2  {
     font-size: 50px;
     margin-top: 20px;
 }
+
 
 .wrapper-control {
     margin-top: 20px;
@@ -128,13 +131,7 @@ button {
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
 }
-/*
-button:hover {
-    transition: .4s;
-    transform: scale(1.2);
-}
 
- */
 button:active {
     transform: scale(1.1);
 }
@@ -157,4 +154,27 @@ button:active {
     color: forestgreen;
     transition: .7s;
     border: 2px solid forestgreen;
+}
+
+/* === Media queries === */
+
+@media (max-width: 992px) {
+    .container {
+        width: 100%;
+    }
+    h1 {
+        font-size: 58px;
+    }
+    h2 {
+        font-size: 56px;
+    }
+    button {
+        font-size: 28px;
+    }
+    h3  {
+        font-size: 28px;
+    }
+}
+@media (max-width: 512px) {
+
 }

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Counter App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600;700&family=Quicksand:wght@500&display=swap" rel="stylesheet">
@@ -14,7 +15,7 @@
 
         <div class="wrapper-content">
 
-            <h1>People entered:</h1>
+            <h1>Counter:</h1>
 
             <h2 id="count-el">0</h2>
 
@@ -22,9 +23,13 @@
 
                 <button id="increment-btn" onclick="increment()">INCREMENT</button>
 
-                <button id="save-btn">SAVE</button>
+                <button id="save-btn" onclick="save()">SAVE</button>
 
             </div>
+
+            <h3>Previous count result:</h3>
+
+            <h3 id="save-el"></h3>
 
         </div>
 

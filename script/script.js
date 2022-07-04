@@ -11,23 +11,24 @@ function increment() {
 
 */
 
-let countEl = document.getElementById("count-el");
-let countLogs = document.getElementById("count-el");
 
-console.log(countEl);
-console.log(countLogs);
+const saveEl = document.getElementById("save-el");
+const countEl = document.getElementById("count-el");
 
 let count = 0;
-let countLogsValue = 0;
 
 function increment() {
-    count = count + 1;
+    count += 1;
     countEl.innerText = count;
+}
 
-    countLogsValue = count;
+// 1. Build function which make log when its counted
 
-    console.log("Logs count " + countLogsValue + "!")
+function save() {
+    let countStr = count + " - ";
+    saveEl.innerText += countStr;
+    countEl.textContent = 0;
+    count = 0;
 
-    console.log(count);
 }
 
